@@ -1,0 +1,45 @@
+import {
+  Container,
+  LogoContainer,
+  NavigationContainer,
+  NavList,
+  NavItem,
+  ButtonContainer,
+  HeaderDivider,
+} from "./styles";
+import HeaderLogo from "../../assets/logo.svg";
+import { MagnifyingGlass } from "phosphor-react";
+
+const NAV_ITEMS = [
+  { title: 'Home', path: '#' },
+  { title: 'Explore', path: '#' },
+  { title: 'Activity', path: '#' },
+  { title: 'Community', path: '#' },
+  { title: 'Contact', path: '#' },
+];
+
+export function Header() {
+  return (
+    <>
+      <Container>
+        <LogoContainer>
+          <img src={HeaderLogo} alt="logo" />
+        </LogoContainer>
+        <NavigationContainer>
+          <NavList>
+            {NAV_ITEMS.map(({ title, path }) => (
+              <NavItem key={title}>
+                <a href={path}>{title}</a>
+              </NavItem>
+            ))}
+          </NavList>
+        </NavigationContainer>
+        <ButtonContainer>
+          <MagnifyingGlass size={32} color={"white"}/>
+          <button>Login / Sign Up</button>
+        </ButtonContainer>
+      </Container>
+      <HeaderDivider />
+    </>
+  );
+}
