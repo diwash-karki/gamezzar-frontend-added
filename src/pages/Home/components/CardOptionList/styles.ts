@@ -32,7 +32,7 @@ export const CardOption = styled.section<CardOptionProps>`
   width: 210px;
   gap: 1rem;
   flex-shrink: 0;
-  
+  cursor: pointer;
 
   div {
     width: 40px;

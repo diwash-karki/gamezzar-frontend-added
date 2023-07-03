@@ -13,7 +13,7 @@ export const FooterContent = styled.div`
   flex-wrap: wrap;
   width: 1000px;
   margin: 0 auto;
-  padding: 60px;
+  padding: 60px 0 60px 0 ;
 `;
 
 export const FooterCompanyLogo = styled.section`
