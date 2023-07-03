@@ -1,0 +1,97 @@
+import {
+  Container,
+  PopularCollectionsCard,
+  PopularCollectionsHeader,
+  PopularCollectionsContent,
+  PopularCollectionsList,
+  Main,
+  SmallImages,
+  LargeImage,
+  Section,
+} from "./styles";
+import zeldaImg from "../../../../assets/zelda.svg";
+
+export function PopularCollection() {
+  return (
+    <Container>
+      <h1>Popular Collection</h1>
+      <PopularCollectionsList>
+        <PopularCollectionsCard>
+          <PopularCollectionsHeader>
+            <ImageContainer src={zeldaImg} alt="Zelda" />
+            <PopularHeaderContent
+              title="Action Games"
+              number={100}
+              name="Ralph Garraway"
+            />
+          </PopularCollectionsHeader>
+          <PopularCollectionsContent>
+            <Main>
+              <ImageContainer src={zeldaImg} alt="Main Image" />
+            </Main>
+            <Section>
+              <SmallImages>
+                <ImageContainer src={zeldaImg} alt="Section Image 1" />
+                <ImageContainer src={zeldaImg} alt="Section Image 2" />
+              </SmallImages>
+              <LargeImage>
+                <ImageContainer src={zeldaImg} alt="Section Image 3" />
+              </LargeImage>
+            </Section>
+          </PopularCollectionsContent>
+        </PopularCollectionsCard>
+        <PopularCollectionsCard>
+          <PopularCollectionsHeader>
+            <ImageContainer src={zeldaImg} alt="Zelda" />
+            <PopularHeaderContent
+              title="Action Games"
+              number={100}
+              name="Ralph Garraway"
+            />
+          </PopularCollectionsHeader>
+          <PopularCollectionsContent>
+            <Main>
+              <ImageContainer src={zeldaImg} alt="Main Image" />
+            </Main>
+            <Section>
+              <SmallImages>
+                <ImageContainer src={zeldaImg} alt="Section Image 1" />
+                <ImageContainer src={zeldaImg} alt="Section Image 2" />
+              </SmallImages>
+              <LargeImage>
+                <ImageContainer src={zeldaImg} alt="Section Image 3" />
+              </LargeImage>
+            </Section>
+          </PopularCollectionsContent>
+        </PopularCollectionsCard>
+      </PopularCollectionsList>
+    </Container>
+  );
+}
+
+export const PopularHeaderContent = ({ title, number, name }: any) => (
+  <div
+    style={{ display: "flex", justifyContent: "space-between", width: "100%" }}
+  >
+    <div>
+      <h3>{title}</h3>
+      <span>{name}</span>
+    </div>
+    <span
+      style={{
+        width: "64px",
+        height: "28px",
+        flexShrink: 0,
+        borderRadius: "10px",
+        background: "var(--background, #14141F)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      {number}
+    </span>
+  </div>
+);
+
+const ImageContainer = ({ src, alt }: any) => <img src={src} alt={alt} />;

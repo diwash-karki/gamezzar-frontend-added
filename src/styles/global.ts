@@ -5,12 +5,6 @@ export const GlobalStyle: any = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
-        @media (max-width: 768px) {
-        body, input, textarea, button {
-            font-size: 0.8rem;
-        }
-    }
     }
 
     :focus {
@@ -21,8 +15,9 @@ export const GlobalStyle: any = createGlobalStyle`
         background-color: var(--white);
         font-family: 'Urbanist', sans-serif;
         -webkit-font-smoothing: antialiased;
-        background: rgb(43,24,103);
-background: linear-gradient(24deg, rgba(43,24,103,1) 0%, rgba(14,5,42,1) 15%, rgba(25,14,61,1) 90%, rgba(55,0,109,1) 100%);
+        background: rgb(12,7,27);
+        background: linear-gradient(24deg, rgba(12,7,27,1) 0%, rgba(21,6,69,1) 19%, rgba(3,1,9,1) 54%, rgba(6,3,47,1) 100%);
+        color: #fff;
     }
 
     body, input, textarea, button {
