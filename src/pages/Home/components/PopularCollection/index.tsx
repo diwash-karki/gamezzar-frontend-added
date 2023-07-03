@@ -10,6 +10,11 @@ import {
   Section,
 } from "./styles";
 import zeldaImg from "../../../../assets/zelda.svg";
+import battlefieldImg from "../../../../assets/battlefield.svg";
+import finalfantasyImg from "../../../../assets/finalfantasy.svg";
+import metalgear from "../../../../assets/metalgear.svg";
+import tkof from "../../../../assets/tkof.svg";
+import mario from "../../../../assets/mario.svg";
 
 export function PopularCollection() {
   return (
@@ -27,15 +32,15 @@ export function PopularCollection() {
           </PopularCollectionsHeader>
           <PopularCollectionsContent>
             <Main>
-              <ImageContainer src={zeldaImg} alt="Main Image" />
+              <ImageContainer src={battlefieldImg} alt="Main Image" />
             </Main>
             <Section>
               <SmallImages>
-                <ImageContainer src={zeldaImg} alt="Section Image 1" />
-                <ImageContainer src={zeldaImg} alt="Section Image 2" />
+                <ImageContainer src={finalfantasyImg} alt="Section Image 1" />
+                <ImageContainer src={metalgear} alt="Section Image 2" />
               </SmallImages>
               <LargeImage>
-                <ImageContainer src={zeldaImg} alt="Section Image 3" />
+                <ImageContainer src={metalgear} alt="Section Image 3" />
               </LargeImage>
             </Section>
           </PopularCollectionsContent>
@@ -51,15 +56,15 @@ export function PopularCollection() {
           </PopularCollectionsHeader>
           <PopularCollectionsContent>
             <Main>
-              <ImageContainer src={zeldaImg} alt="Main Image" />
+              <ImageContainer src={tkof} alt="Main Image" />
             </Main>
             <Section>
               <SmallImages>
-                <ImageContainer src={zeldaImg} alt="Section Image 1" />
-                <ImageContainer src={zeldaImg} alt="Section Image 2" />
+                <ImageContainer src={mario} alt="Section Image 1" />
+                <ImageContainer src={metalgear} alt="Section Image 2" />
               </SmallImages>
               <LargeImage>
-                <ImageContainer src={zeldaImg} alt="Section Image 3" />
+                <ImageContainer src={metalgear} alt="Section Image 3" />
               </LargeImage>
             </Section>
           </PopularCollectionsContent>

@@ -1,5 +1,3 @@
-// styles.ts
-
 import styled from "styled-components";
 
 interface CardOptionProps {
@@ -14,6 +12,7 @@ export const Container = styled.div`
   border-radius: 8px;
   padding: 16px;
   margin-top: 16px;
+  width: 1000px;
 
   h1 {
     margin-bottom: 16px;
@@ -22,7 +21,8 @@ export const Container = styled.div`
   main {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 3rem;
   }
 `;
 
@@ -52,4 +52,3 @@ export const CardOption = styled.section<CardOptionProps>`
     text-overflow: ellipsis;
   }
 `;
-

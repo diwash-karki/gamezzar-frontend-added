@@ -17,7 +17,7 @@ export const PopularCollectionsList = styled.div`
 export const PopularCollectionsCard = styled.div`
   padding: 1rem;
   background-color: #343444;
-  max-width: 550px;
+  min-width: 475px;
   max-height: 394px;
   border-radius: 20px;
   margin-top: 1rem;
@@ -45,7 +45,7 @@ export const Main = styled.main`
   width: 220px;
   height: 272px;
   img {
-    width: 205px;
+    width: 180px;
     height: 100%;
     object-fit: cover;
     background: var(--secondary-white, #7a798a);
@@ -56,10 +56,12 @@ export const Main = styled.main`
 export const SmallImages = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
   img {
     height: 105px;
+    width: 48%;
     object-fit: cover;
     background: var(--secondary-white, #7a798a);
     border-radius: 20px;
@@ -67,6 +69,7 @@ export const SmallImages = styled.div`
 `;
 
 export const LargeImage = styled.div`
+  margin-left: 1rem;
   img {
     width: 100%;
     height: 150px;

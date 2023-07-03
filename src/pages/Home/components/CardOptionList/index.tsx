@@ -1,24 +1,6 @@
 import { GameController, Swap, Sword, User, IconProps } from "phosphor-react";
 import { Container, CardOption } from "./styles";
 
-interface OptionProps {
-  Icon: React.ComponentType<IconProps>;
-  title: string;
-  description: string;
-  backgroundColor: string;
-}
-
-const OptionCard: React.FC<OptionProps> = ({ Icon, title, description, backgroundColor }) => (
-  <CardOption backgroundColor={backgroundColor}>
-    <div>
-      <Icon size={28} />
-    </div>
-    <h3>{title}</h3>
-    <p>{description}</p>
-  </CardOption>
-);
-
-
 export function CardOptionList() {
   const options: OptionProps[] = [
     {
@@ -58,3 +40,21 @@ export function CardOptionList() {
     </Container>
   );
 }
+
+
+interface OptionProps {
+  Icon: React.ComponentType<IconProps>;
+  title: string;
+  description: string;
+  backgroundColor: string;
+}
+
+const OptionCard: React.FC<OptionProps> = ({ Icon, title, description, backgroundColor }) => (
+  <CardOption backgroundColor={backgroundColor}>
+    <div>
+      <Icon size={28} />
+    </div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </CardOption>
+);
