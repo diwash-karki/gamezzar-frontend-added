@@ -9,92 +9,25 @@ import {
   CardType,
   CardOwner,
   OwnerDetails,
-  ShowMoreButton
+  ShowMoreButton,
 } from "./styles";
 import { Button } from "../../../../components/Button";
-
-import zeldaImg from "../../../../assets/zelda.svg";
-import tlofImage from "../../../../assets/tlof.svg";
-import gowImage from "../../../../assets/gow.svg";
-import callistImage from "../../../../assets/callist.svg";
 import avatarTwoImage from "../../../../assets/avatar2.svg";
 import { useState } from "react";
+import { TopTrendingProps } from "../TopTrending";
+import { S3_BASE_URL } from "../../../../helper/constants";
 
-export function TodaysDeals() {
+export function TodaysDeals({ products }: TopTrendingProps) {
   const [visibleRows, setVisibleRows] = useState(2);
 
-  const cards = [
-    // Array of card data (you can replace this with actual data)
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: tlofImage,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: gowImage,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: callistImage,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    {
-      src: zeldaImg,
-      alt: "Product",
-      title: "The Legend Of Zelda: Breath of the Wild",
-      owner: "SalvadorDali",
-    },
-    // Other cards
-  ];
+  const listOfGames = products.map((product) => ({
+    src: `${S3_BASE_URL}/games/${product.image}`,
+    alt: `${product.slug}`,
+    title: `${product.title}`,
+    owner: `${product.user.user_name}`,
+  }));
 
-  const visibleCards = cards.slice(0, visibleRows * 4); // Show 4 cards per row
+  const visibleCards = listOfGames.slice(0, visibleRows * 4); // Show 4 cards per row
 
   return (
     <Container>
@@ -110,7 +43,7 @@ export function TodaysDeals() {
           />
         ))}
       </CardList>
-      {visibleRows * 4 < cards.length && (
+      {visibleRows * 4 < listOfGames.length && (
         <ShowMoreButton onClick={() => setVisibleRows(visibleRows + 1)}>
           Show more
         </ShowMoreButton>
@@ -132,7 +65,7 @@ const Card = ({ src, alt, title, owner }: CardProps) => (
     <CardSection>
       <div>
         <CardTitle>{title}</CardTitle>
-        <CardType>BSC</CardType>
+        {/* <CardType>BSC</CardType> */}
       </div>
       <CardFooterContent>
         <CardOwner>

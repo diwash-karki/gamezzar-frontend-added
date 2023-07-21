@@ -17,19 +17,19 @@ export const TrendingCard: React.FC<TrendingCardProps> = ({ item }) => (
   <TopTrendingCard>
     <TopTrendingCardContent>
       <TopTrendingCardImage>
-        <img src={item.img} alt="avatar" />
+        <img src={item.imageUrl} alt="avatar" />
       </TopTrendingCardImage>
       <TopTrendingCardPhoto>
         <CardTitle>{item.title}</CardTitle>
-        <CardType>{item.subtitle}</CardType>
+        {/* <CardType>{item.subtitle}</CardType> */}
       </TopTrendingCardPhoto>
-      <TopTrendingCardFooter>
+      {/* <TopTrendingCardFooter>
         <img src={item.footerImg} alt="avatar" />
         <div>
           <span>{item.creatorLabel}</span>
           <p>{item.creatorName}</p>
         </div>
-      </TopTrendingCardFooter>
+      </TopTrendingCardFooter> */}
     </TopTrendingCardContent>
   </TopTrendingCard>
 );

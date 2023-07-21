@@ -1,7 +1,8 @@
 import { GameController, Swap, Sword, User, IconProps } from "phosphor-react";
 import { Container, CardOption } from "./styles";
+import { TopTrendingProps } from "../TopTrending";
 
-export function CardOptionList() {
+export function CardOptionList({ products }: TopTrendingProps) {
   const options: OptionProps[] = [
     {
       Icon: User,
