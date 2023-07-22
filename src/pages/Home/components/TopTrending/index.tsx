@@ -7,7 +7,7 @@ import {
   CarouselList,
 } from "./styles";
 import { useState } from "react";
-import { ICardData, importImages } from "./utils";
+import { ICardData } from "./utils";
 import { TrendingCard } from "./TopTrendingCard";
 import { S3_BASE_URL } from "../../../../helper/constants";
 
@@ -54,7 +54,6 @@ export interface TopTrendingProps {
 }
 
 export function TopTrending({ products }: TopTrendingProps) {
-  const data = importImages(); // Move image importing and data into a utility function
 
   const newData = products.map((product) => {
     return {

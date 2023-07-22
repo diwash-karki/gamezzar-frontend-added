@@ -30,10 +30,10 @@ export function Home() {
       <PromoContent />
       <section>
         <TopTrending products={products} />
-        <TopSellers products={products}/>
-        <TodaysDeals products={products}/>
-        <PopularCollection products={products}/>
-        <CardOptionList products={products}/>
+        <TopSellers products={products} />
+        <TodaysDeals products={products} />
+        <PopularCollection />
+        <CardOptionList />
       </section>
     </Container>
   );

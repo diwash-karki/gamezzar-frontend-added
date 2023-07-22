@@ -15,9 +15,8 @@ import finalfantasyImg from "../../../../assets/finalfantasy.svg";
 import metalgear from "../../../../assets/metalgear.svg";
 import tkof from "../../../../assets/tkof.svg";
 import mario from "../../../../assets/mario.svg";
-import { TopTrendingProps } from "../TopTrending";
 
-export function PopularCollection({ products }: TopTrendingProps) {
+export function PopularCollection() {
   return (
     <Container>
       <h1>Popular Collection</h1>
