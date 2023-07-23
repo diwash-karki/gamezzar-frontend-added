@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -12,5 +12,68 @@ export const Container = styled.div`
 
   h1 {
     margin-bottom: 45px;
+  }
+`;
+
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  textarea {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+`;
+
+export const InputForm = styled.input`
+  display: flex;
+  padding: 10px 5px;
+  color: "#495057";
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+`;
+
+export const SelectForm = styled.select`
+  display: flex;
+  padding: 10px 5px;
+  color: "#495057";
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+`;
+
+export const FormSubmitButton = styled.button`
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  float: right;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #0069d9;
   }
 `;
