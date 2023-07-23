@@ -1,9 +1,9 @@
-
+import { Container } from "./styles";
 
 export function Preferences() {
-    return (
-        <div>
-            Collection
-        </div>
-    )
+  return (
+    <Container>
+      <h1>Preferences</h1>
+    </Container>
+  );
 }

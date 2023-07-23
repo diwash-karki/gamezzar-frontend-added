@@ -1,9 +1,9 @@
-
+import { Container } from "./styles";
 
 export function Wishlist() {
-    return (
-        <div>
-            Collection
-        </div>
-    )
+  return (
+    <Container>
+      <h1>Wishlist</h1>
+    </Container>
+  );
 }

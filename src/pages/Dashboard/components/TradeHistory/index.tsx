@@ -1,3 +1,9 @@
+import { Container } from "./styles";
+
 export function TradeHistory() {
-  return <div>History</div>;
+  return (
+    <Container>
+      <h1>Profile</h1>
+    </Container>
+  );
 }
