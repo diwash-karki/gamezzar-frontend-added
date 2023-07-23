@@ -21,7 +21,7 @@ import {
 import { Feedback } from "./components/Feedbacks";
 
 export function Profile() {
-  const [activeTab, setActiveTab] = useState("Avaliações");
+  const [activeTab, setActiveTab] = useState("Feedbacks");
 
   return (
     <Container>
