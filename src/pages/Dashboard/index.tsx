@@ -9,6 +9,13 @@ import {
 } from "./styles";
 import { Opportunities } from "./components/Opportunities";
 import { Proposal } from "./components/Proposals";
+import { Collection } from "./components/Collection";
+import { Trades } from "./components/Trades";
+import { Profile } from "./components/Profile";
+import { Preferences } from "./components/Preferences";
+import { Wishlist } from "./components/Wishlist";
+import { TradeHistory } from "./components/TradeHistory";
+import { Following } from "./components/Following";
 
 export function Dashboard() {
   const [activeTab, setActiveTab] = useState("Opportunities");
@@ -29,13 +36,27 @@ export function Dashboard() {
           <SpanOptionButton onClick={() => setActiveTab("Proposals")}>
             Proposals
           </SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("Trades")}>Ongoing Trades</SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("Wishlist")}>Wishlist</SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("Collection")}>My Collection</SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("History")}>Trade History</SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("Following")}>Following</SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("Preferences")}>Preferences</SpanOptionButton>
-          <SpanOptionButton onClick={() => setActiveTab("Profile")}>Edit Profile</SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("Trades")}>
+            Ongoing Trades
+          </SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("Wishlist")}>
+            Wishlist
+          </SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("Collection")}>
+            My Collection
+          </SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("History")}>
+            Trade History
+          </SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("Following")}>
+            Following
+          </SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("Preferences")}>
+            Preferences
+          </SpanOptionButton>
+          <SpanOptionButton onClick={() => setActiveTab("Profile")}>
+            Edit Profile
+          </SpanOptionButton>
         </NavigationContainer>
       </LeftSideMenuContainer>
       <RightSideContainer>
@@ -46,19 +67,19 @@ export function Dashboard() {
             case "Proposals":
               return <Proposal />;
             case "Trades":
-              return <div>This is the Trades content.</div>;
+              return <Trades />;
             case "Wishlist":
-              return <div>This is the Wishist content.</div>;
+              return <Wishlist />;
             case "Collection":
-              return <div>This is the Collection content.</div>;
+              return <Collection />;
             case "History":
-              return <div>This is the History content.</div>;
+              return <TradeHistory />;
             case "Following":
-              return <div>This is the Following content.</div>;
+              return <Following />;
             case "Preferences":
-              return <div>This is the Preferences content.</div>;
+              return <Preferences />;
             case "Profile":
-              return <div>This is the Profile content.</div>;
+              return <Profile />;
             default:
               return null;
           }
