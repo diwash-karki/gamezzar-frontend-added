@@ -37,7 +37,7 @@ export function Collection() {
               <span>10</span>
             </TableDataCellScore>
             <TableDataCellLevel>
-              <span>3</span>
+              <img src="https://cdn.trocajogo.net/static/gauge3.svg" />
             </TableDataCellLevel>
             <TableDataCellEdit>
               <span>Edit</span>
