@@ -5,7 +5,6 @@ import {
   TableBodyContainer,
   TableDataCellGame,
   TableDataCellScore,
-  TableDataCellLevel,
   TableDataCellEdit,
 } from "./styles";
 

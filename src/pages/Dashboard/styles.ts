@@ -41,7 +41,6 @@ export const NavigationContainer = styled.div`
   background-color: #c6c6c6;
   align-items: center;
   justify-content: center;
-  border: 1px solid #c6c6c6;
 `;
 
 export const SpanOptionButton = styled.span`
@@ -54,6 +53,7 @@ export const SpanOptionButton = styled.span`
   justify-content: center;
   cursor: pointer;
   transition: 0.3s;
+  border: 1px solid rgba(0,0,0,.125);
 
   &:hover {
     background-color: #5122fc;

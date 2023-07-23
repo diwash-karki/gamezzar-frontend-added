@@ -14,3 +14,15 @@ export const Container = styled.div`
     margin-bottom: 45px;
   }
 `;
+
+export const InactiveTradesImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 350px;
+    height: 350px;
+  }
+`;

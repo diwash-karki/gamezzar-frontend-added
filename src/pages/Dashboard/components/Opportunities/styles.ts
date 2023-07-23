@@ -59,7 +59,6 @@ export const FeedbackContainer = styled.div`
   display: flex;
   flex-direction: space-between;
   margin-top: 10px;
-  border: 1px solid #fff;
   padding: 10px;
   border-radius: 5px;
 `;
