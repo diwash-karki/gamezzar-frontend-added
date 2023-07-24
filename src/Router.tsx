@@ -1,9 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import { DefaultLayout } from './layout/DefaultLayout'
-import { Home } from './pages/Home'
-import { Chat } from './pages/Chat'
-import { Profile } from './pages/Profile'
-import { Dashboard } from './pages/Dashboard'
+import { Home } from './pages/Home/index'
+import { Chat } from './pages/Chat/index'
+import { Profile } from './pages/Profile/index'
+import { Dashboard } from './pages/Dashboard/index'
+import LoginPage from './pages/Login/LoginPage'
+import SignupPage from './pages/Signup/SignupPage'
+
 
 export function Router() {
   return (
@@ -13,6 +16,8 @@ export function Router() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/chat" element={<Chat />} />
         <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/signup' element={<SignupPage />} />
       </Route>
     </Routes>
   )

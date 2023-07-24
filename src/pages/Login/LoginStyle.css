@@ -1,0 +1,99 @@
+.Login-Head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.Login-Head>h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px;
+}
+
+.Login-Head>p {
+    font-size: 1.5rem;
+    width: 800px;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: thin;
+    color: rgba(255, 255, 255, 0.433);
+    margin: 10px 0px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.input-box {
+    margin: 10px 0px;
+    padding: 15px 20px;
+    border: none;
+    width: 400px;
+    height: 60px;
+    font-size: 1.2rem;
+    color: rgb(186, 186, 186);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.Login-btn {
+    margin: 10px 0px;
+    padding: 15px 20px;
+    border: none;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    /* gradient match with bg */
+    background: linear-gradient(90deg, hsla(132, 43%, 54%, 1) 0%, hsla(65, 69%, 56%, 1) 90%, hsla(56, 77%, 54%, 1) 100%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signup-btn {
+    height: 50px;
+    width: 300px;
+    background: transparent;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid white;
+    transition: 0.1s;
+    
+}
+
+.signup-btn:hover {
+    background-color: rgba(255, 255, 255, 0.22);
+    border:rgba(255, 255, 255, 0.22);
+    color:rgb(186, 186, 186);
+}
+.forgot-btn{
+    background-color: transparent;
+    border:none;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 40px 0px;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+.forgot-btn:active{
+    scale: 0.9;
+}

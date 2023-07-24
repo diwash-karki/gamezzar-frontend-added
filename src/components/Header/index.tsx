@@ -39,7 +39,9 @@ export function Header() {
         </NavigationContainer>
         <ButtonContainer>
           <MagnifyingGlass size={32} color={"white"} />
-          <button>Login / Sign Up</button>
+          <a href="/login">
+            <button>Login / Sign Up</button>
+          </a>
         </ButtonContainer>
       </Container>
       <HeaderDivider />
