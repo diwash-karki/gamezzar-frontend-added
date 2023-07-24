@@ -25,7 +25,7 @@ export function Header() {
       <Container>
         <LogoContainer>
           <NavLink to="/">
-            <img src={HeaderLogo} alt="logo" />
+            <img src={HeaderLogo} alt=" logo" />
           </NavLink>
         </LogoContainer>
         <NavigationContainer>
