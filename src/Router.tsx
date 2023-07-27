@@ -7,6 +7,8 @@ import { Dashboard } from './pages/Dashboard/index'
 import LoginPage from './pages/Login/LoginPage'
 import SignupPage from './pages/Signup/SignupPage'
 import CardUI from './pages/CardUI/CardUI'
+import HelpCenter from './pages/Help/HelpCenter'
+import ContactUs from './pages/Contact/ContactUs'
 
 export function Router() {
   return (
@@ -19,6 +21,8 @@ export function Router() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
         <Route path='/explore' element={<CardUI />} />
+        <Route path='/help' element={<HelpCenter />} />
+        <Route path='/contact' element={<ContactUs />} />
       </Route>
     </Routes>
   )
