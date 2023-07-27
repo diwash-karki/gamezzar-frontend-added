@@ -1,0 +1,154 @@
+.select-holder{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 30px ;
+    margin: 30px 0px;
+}
+
+.select-btn{
+    padding: 14px 15px;
+    margin: 0px 10px;
+    background-color: rgba(52, 52, 68, 1);
+    border: none;
+    color: white;
+    border-radius: 5px;
+
+}
+
+
+.card-holder{
+    padding: 10px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 3rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(53,53,71);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-image{
+    width: 100%;
+    padding: 10px;
+    height: 55%;
+    border-radius: 10px;
+    background-color: rgb(123,121,136);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.coming-soon{
+    width: 120px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: orange;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+.favourite{
+    background-color: black;
+    color: rgb(210, 210, 210);
+    width: 70px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.title-card>span{
+    width: 80%;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.title-card>label{
+    width: 15%;
+    border-radius: 40px;
+    background-color: rgb(79,57,252);
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 10px ;
+    text-align: center;
+    font-weight: 600;
+}
+
+.profile-holder{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: rgb(123,121,136);
+}
+
+.profile-txt-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-txt-holder>label{
+    color: rgb(175, 175, 175);
+}
+
+.btn-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.trade-btn{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.679);
+    border: solid 3px rgb(80, 71, 133);
+    border-radius: 40px;
+    width: 120px;
+    font-weight: 600;
+    height: 40px;
+    transition: 0.2s;
+}
+.trade-btn:hover{
+    background-color: rgb(80, 71, 133);
+    color: white;
+}
+.history-btn{
+    background-color: transparent;
+    border: none;
+    color:#b6b6b6;
+    border: solid 2px transparent;
+    padding: 0px 10px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 40px;
+    transition: 0.2s;
+}
+
+.history-btn:hover{
+    border: solid 2px #b6b6b6;
+
+}
