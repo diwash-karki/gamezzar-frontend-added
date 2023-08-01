@@ -9,6 +9,7 @@ import SignupPage from './pages/Signup/SignupPage'
 import CardUI from './pages/CardUI/CardUI'
 import HelpCenter from './pages/Help/HelpCenter'
 import ContactUs from './pages/Contact/ContactUs'
+import BlogPage from './pages/Blog/BlogPage'
 
 export function Router() {
   return (
@@ -23,6 +24,7 @@ export function Router() {
         <Route path='/explore' element={<CardUI />} />
         <Route path='/help' element={<HelpCenter />} />
         <Route path='/contact' element={<ContactUs />} />
+        <Route path='/blog' element={<BlogPage />} />
       </Route>
     </Routes>
   )
